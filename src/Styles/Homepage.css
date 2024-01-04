@@ -1,0 +1,63 @@
+.body {
+  padding: 2rem;
+}
+.body > h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  display: block;
+  font-size: 2em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+h1:hover {
+  background: linear-gradient(to right, rgb(27, 28, 26), rgb(136, 31, 182));
+  -webkit-background-clip: text; /* For Safari and older versions of Chrome */
+  background-clip: text;
+  color: transparent;
+}
+.items-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+.item {
+  width: 280px;
+  height: fit-content;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  overflow: hidden;
+}
+.item img{
+  width: 100%;
+}
+.item .img-div {
+  width: 100%;
+  height: 300px;
+  object-fit:contain;
+  background: white;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.item span {
+  margin-left: 0.5rem;
+}
+.item button {
+  font-weight: 700;
+  background: #000;
+  color: white;
+  padding: 0.8rem;
+  transition: 0.2s;
+}
+.item button:hover{
+  background-color: rgb(166, 141, 255);
+  color: black;
+}
+.added-to-cart-message button{
+  width: 100% !important;
+}
